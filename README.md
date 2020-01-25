@@ -7,8 +7,8 @@ Data Modelling
 
 ### Links and Resources
 
-- [submission PR](http://xyz.com)
-- [ci/cd](http://xyz.com) (GitHub Actions)
+- [submission PR](https://github.com/Mohammed-401-advanced-javascript/Lab-04/pull/1)
+- [ci/cd](https://github.com/Mohammed-401-advanced-javascript/Lab-04/actions) (GitHub Actions)
 - [back-end server url](http://xyz.com) (when applicable)
 - [front-end application](http://xyz.com) (when applicable)
 
@@ -36,4 +36,4 @@ npm run test
 
 Link to an image of the UML for your application and response to events
 
-![UML-Image-Lab-4](UML Lab 4.jpg)
+![UML](UML Lab 4.jpg)
