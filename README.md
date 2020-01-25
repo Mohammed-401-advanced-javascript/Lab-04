@@ -35,3 +35,5 @@ npm run test
 #### UML
 
 Link to an image of the UML for your application and response to events
+
+![UML-Image-Lab-4](assets/UML Lab 4.jpg)
