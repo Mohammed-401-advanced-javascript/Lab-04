@@ -1,4 +1,5 @@
-'use strict';
+/* eslint-disable camelcase */
+
 
 const FileDataModel = require('./model/file-data-model');
 

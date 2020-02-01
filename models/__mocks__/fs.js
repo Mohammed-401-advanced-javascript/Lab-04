@@ -1,4 +1,5 @@
-'use strict';
+/* eslint-disable no-undefined */
+
 
 module.exports = exports = {};
 

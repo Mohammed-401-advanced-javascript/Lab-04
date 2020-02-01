@@ -1,4 +1,6 @@
-'use strict';
+/* eslint-disable no-undefined */
+/* eslint-disable camelcase */
+
 
 
 const Products = require('../../products.js');
@@ -35,40 +37,40 @@ describe('product Model', () => {
       });
   });
 
-  
-  
+
+
   it('can update() a product', () => {
-      let obj = { weight :79 };
-      return product.create(obj)
+    let obj = { weight :79 };
+    return product.create(obj)
       .then(record => {
-          record.weight = 11;
-          return product.update(record._id, record)
+        record.weight = 11;
+        return product.update(record._id, record)
           .then(data => {
-              return product.get(data._id)
+            return product.get(data._id)
               .then(val => {
-                  
-                  Object.keys(obj).forEach(key => {
-                      expect(val[0][key]).toEqual(obj[key]);
-                    });
-                })
-            });
-        });
-    });
+
+                Object.keys(obj).forEach(key => {
+                  expect(val[0][key]).toEqual(obj[key]);
+                });
+              });
+          });
+      });
+  });
 
 
-    it('can delete() a product', () => {
-        let obj = { quantity_in_stock: 54 };
-        return product.create(obj)
-            .then(record => {
-                return product.get(record._id)
-                    .then(val => {
-                        return product.delete(val._id)
-                            .then(inp => {
-                                expect(inp).toEqual(undefined);
-                            })
-                    });
-            });
-    });
+  it('can delete() a product', () => {
+    let obj = { quantity_in_stock: 54 };
+    return product.create(obj)
+      .then(record => {
+        return product.get(record._id)
+          .then(val => {
+            return product.delete(val._id)
+              .then(inp => {
+                expect(inp).toEqual(undefined);
+              });
+          });
+      });
+  });
 
 
 
